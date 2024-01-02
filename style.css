@@ -15,8 +15,6 @@ nav {
     align-items: center;
 }
 .heading {
-    font-size: 3.5rem;
-    font-weight: bold;
     color: #415a77;
 }
 
@@ -43,7 +41,6 @@ main {
 p {
     display: inline-block;
     margin: 0.2rem 0 0.2rem 0;
-    font-size: 2.1em;
 }
 
 /* footer */
@@ -63,4 +60,30 @@ footer button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.5em;
+}
+
+@media (min-width: 600px) {
+    .heading {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+    p {
+        font-size: 2.1em;
+    }
+}
+@media (max-width: 599px) {
+    .heading {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 400px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.4em;
+    }
 }

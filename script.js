@@ -1,14 +1,15 @@
-import { joke } from './jokes.js';
-// console.log(typeof joke);
-const random = Math.floor(Math.random()*joke.length);
-// console.log(joke.length);
+import { jokeFromAPI } from './jokeAPI.js';
+console.log(typeof jokeFromAPI);
+console.log("jokem", jokeFromAPI);
+const random = Math.floor(Math.random()*jokeFromAPI.length);
+// console.log(jokeFromAPI.length);
 // console.log(random);
 let paragraph = document.body.children[1].firstElementChild.firstElementChild;
 // console.log(paragraph);
-// console.log(joke[random])
-let lines = joke[random].split(/\n/g);
+// console.log(jokeFromAPI[random])
+let lines = jokeFromAPI[random].split(/\n/g);
 
-// console.log(joke[54])
+// console.log(jokeFromAPI[54])
 // console.log(lines);
 let wholeJoke = "";
 for(let i in lines) {
